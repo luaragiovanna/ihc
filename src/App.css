@@ -1,34 +1,82 @@
-.App{
+.App {
   min-height: 100vh;
- background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-image: linear-gradient(120deg, #83ebdb 0%, #ebfbb0 100%);
+  text-align: center;
 }
-.search-form{
+
+.search-form {
   min-height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.search-bar{
+
+.search-bar {
   width: 50%;
-  border:none;
+  border: none;
   padding: 10px;
-  border-radius: 5px;
-  box-shadow: 5px 10px #979b91;
 }
-.search-button{
-  background: #4da1ab;
-  border: 5px solid white;
-  border-radius: 8px;
+
+.search-button {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   padding: 10px 20px;
   color: white;
-  font-size: larger;
-  margin: 0 0 0 10px;
+  border: none;
+  cursor: pointer;
 }
-.search-button:hover {
-  background-color:#fa709a ;
-}
-.recipes{
+
+.recipes {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+.add-button {
+  display: block;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #4caf7a;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  font-size: 50px;
+  text-align: center;
+  line-height: 58px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; 
+  z-index: 1; 
+  margin-top: 0px;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+
+.centered-image {
+  max-width: 80%; 
+  height: auto;
+}
+.dark-blue-text {
+  color: #18088d; 
+}
+
