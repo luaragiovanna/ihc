@@ -28,8 +28,10 @@ const Home = ({ handleSearch, searchValue }) => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
+
     getRecipes();
   }, [searchValue]);
+  
 
   const getRecipes = async () => {
     try {
@@ -56,9 +58,7 @@ const Home = ({ handleSearch, searchValue }) => {
     <div className="App">
       <div className="background">
       
-        <div className="image-container">
-          <img src={require('./assets/img2.png')} alt="Imagem" />
-        </div>
+      
       </div>
      
       <div className="content-container">

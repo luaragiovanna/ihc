@@ -15,7 +15,7 @@ const AddRecipeForm = ({ onAddRecipe }) => {
       ingredients: ingredients.split(',').map(ingredient => ({ text: ingredient.trim() })),
     };
     onAddRecipe(newRecipe);
-    // Limpar os campos após adicionar a receita
+    
     setTitle('');
     setCalories('');
     setImage('');
